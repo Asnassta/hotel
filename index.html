@@ -11,6 +11,11 @@
 <body>
 	<!--Sprite-->
 	<svg style="display: none;">
+		<symbol id="arrow-icon" viewBox="0 0 24 24">
+			<g>
+				<path d="M17.77 3.77L16 2L6.00002 12L16 22L17.77 20.23L9.54002 12L17.77 3.77Z"/>
+			</g>
+		</symbol>
 		<symbol id="close-icon" viewBox="0 0 28 28">
 			<g>
 				<path d="M28 2.82L25.18 0L14 11.18L2.82 0L0 2.82L11.18 14L0 25.18L2.82 28L14 16.82L25.18 28L28 25.18L16.82 14L28 2.82Z"/>
@@ -83,7 +88,7 @@
 							<a href="#" class="header-nav__item">Услуги</a>
 							<a href="#" class="header-nav__item">Фотографии</a>
 							<a href="#" class="header-nav__item">Контакты</a>
-							<a href="#" class="btn">Забронировать</a>
+							<a href="#" class="btn open-popup" data-popup="popup-form">Забронировать</a>
 						</nav>
 						<a href="tel:+74956175969" class="header__link">
 							<svg>
@@ -101,7 +106,7 @@
 				<div class="mobile-menu__bg"></div>
 				<div class="mobile-menu__inner">
 					<div class="mobile-menu__buttons">
-						<a href="#" class="btn">Забронировать</a>
+						<a href="#" class="btn open-popup" data-popup="popup-form">Забронировать</a>
 						<a href="#" class="mobile-menu__close">
 							<svg>
 								<use xlink:href="#close-icon"></use>
@@ -162,7 +167,7 @@
 									</div>
 									<h1 class="intro__title animated_slideInDown">Парк-отель</h1>
 									<div class="intro__description animated_zoomOut">В окружении лесов, рядом с озером «Круглое»</div>
-									<a href="#" class="btn animated_slideInUp">Забронировать</a>
+									<a href="#" class="btn open-popup animated_slideInUp" data-popup="popup-form">Забронировать</a>
 								</div>
 							</div>
 						</div><!--/intro__slide-->
@@ -174,7 +179,7 @@
 								<div class="intro__info">
 									<h1 class="intro__title animated_slideInDown">26 гектаров</h1>
 									<div class="intro__description animated_zoomOut">Размер территории парка-отеля</div>
-									<a href="#" class="btn animated_slideInUp">Забронировать</a>
+									<a href="#" class="btn open-popup animated_slideInUp" data-popup="popup-form">Забронировать</a>
 								</div>
 							</div>
 						</div><!--/intro__slide-->
@@ -186,7 +191,7 @@
 								<div class="intro__info">
 									<h1 class="intro__title animated_flipInX">12 корпусов<br> и 517 номеров</h1>
 									<div class="intro__description animated_slideInLeft">Два отеля на одной территории:<br> «Озеро круглое» и «Озеро лесное»</div>
-									<a href="#" class="btn animated_slideInUp">Забронировать</a>
+									<a href="#" class="btn open-popup animated_slideInUp" data-popup="popup-form">Забронировать</a>
 								</div>
 							</div>
 						</div><!--/intro__slide-->
@@ -541,8 +546,287 @@
 					</div>
 				</div>
 			</section><!--/service-->
+			<section class="photo">
+				<div class="container container_full">
+					<h2 class="title">
+						<span>ФОТОГРАФИИ</span>
+						<span>Добро пожаловать<br> в «Озеро Круглое»</span>
+					</h2>
+					<div class="photo-slider">
+						<div class="photo-slider__slide">
+							<div class="photo-slider__item photo-slider__item_left">
+								<img src="assets/images/hotel-photo_1.jpg" alt="">
+							</div>
+						</div><!--/photo-slider__slide-->
+						<div class="photo-slider__slide">
+							<div class="photo-slider__item">
+								<img src="assets/images/hotel-photo_2.jpg" alt="">
+							</div>
+						</div><!--/photo-slider__slide-->
+						<div class="photo-slider__slide">
+							<div class="photo-slider__item">
+								<img src="assets/images/hotel-photo_3.jpg" alt="">
+							</div>
+						</div><!--/photo-slider__slide-->
+						<div class="photo-slider__slide">
+							<div class="photo-slider__item">
+								<img src="assets/images/hotel-photo_4.jpg" alt="">
+							</div>
+						</div><!--/photo-slider__slide-->
+						<div class="photo-slider__slide">
+							<div class="photo-slider__item">
+								<img src="assets/images/hotel-photo_5.jpg" alt="">
+							</div>
+						</div><!--/photo-slider__slide-->
+						<div class="photo-slider__slide">
+							<div class="photo-slider__item">
+								<img src="assets/images/hotel-photo_6.jpg" alt="">
+							</div>
+						</div><!--/photo-slider__slide-->
+						<div class="photo-slider__slide">
+							<div class="photo-slider__item">
+								<img src="assets/images/hotel-photo_7.jpg" alt="">
+							</div>
+						</div><!--/photo-slider__slide-->
+						<div class="photo-slider__slide">
+							<div class="photo-slider__item">
+								<img src="assets/images/hotel-photo_8.jpg" alt="">
+							</div>
+						</div><!--/photo-slider__slide-->
+						<div class="photo-slider__slide">
+							<div class="photo-slider__item">
+								<img src="assets/images/hotel-photo_9.jpg" alt="">
+							</div>
+						</div><!--/photo-slider__slide-->
+						<div class="photo-slider__slide">
+							<div class="photo-slider__item">
+								<img src="assets/images/hotel-photo_10.jpg" alt="">
+							</div>
+						</div><!--/photo-slider__slide-->
+						<div class="photo-slider__slide">
+							<div class="photo-slider__item">
+								<img src="assets/images/hotel-photo_11.jpg" alt="">
+							</div>
+						</div><!--/photo-slider__slide-->
+						<div class="photo-slider__slide">
+							<div class="photo-slider__item">
+								<img src="assets/images/hotel-photo_12.jpg" alt="">
+							</div>
+						</div><!--/photo-slider__slide-->
+						<div class="photo-slider__slide">
+							<div class="photo-slider__item">
+								<img src="assets/images/hotel-photo_13.jpg" alt="">
+							</div>
+						</div><!--/photo-slider__slide-->
+						<div class="photo-slider__slide">
+							<div class="photo-slider__item">
+								<img src="assets/images/hotel-photo_14.jpg" alt="">
+							</div>
+						</div><!--/photo-slider__slide-->
+						<div class="photo-slider__slide">
+							<div class="photo-slider__item">
+								<img src="assets/images/hotel-photo_15.jpg" alt="">
+							</div>
+						</div><!--/photo-slider__slide-->
+						<div class="photo-slider__slide">
+							<div class="photo-slider__item">
+								<img src="assets/images/hotel-photo_16.jpg" alt="">
+							</div>
+						</div><!--/photo-slider__slide-->
+						<div class="photo-slider__slide">
+							<div class="photo-slider__item">
+								<img src="assets/images/hotel-photo_17.jpg" alt="">
+							</div>
+						</div><!--/photo-slider__slide-->
+						<div class="photo-slider__slide">
+							<div class="photo-slider__item">
+								<img src="assets/images/hotel-photo_18.jpg" alt="">
+							</div>
+						</div><!--/photo-slider__slide-->
+						<div class="photo-slider__slide">
+							<div class="photo-slider__item">
+								<img src="assets/images/hotel-photo_19.jpg" alt="">
+							</div>
+						</div><!--/photo-slider__slide-->
+						<div class="photo-slider__slide">
+							<div class="photo-slider__item">
+								<img src="assets/images/hotel-photo_20.jpg" alt="">
+							</div>
+						</div><!--/photo-slider__slide-->
+					</div>
+					<div class="arrow-circle-box">
+						<div class="arrow-circle arrow-circle_prev">
+							<svg>
+								<use xlink:href="#arrow-icon"></use>
+							</svg>
+						</div>
+						<div class="arrow-circle arrow-circle_next">
+							<svg>
+								<use xlink:href="#arrow-icon"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</section><!--/photo-->
+			<section class="video">
+				<div class="container container_small">
+					<h2 class="title">
+						<span>Видео</span>
+						<span>26 гектаров парка</span>
+					</h2>
+					<a href="https://www.youtube.com/watch?v=bmK4BRYsLaM" class="video__content" target="blank">
+						<img src="assets/images/forest.jpg" alt="">
+					</a>
+				</div>
+			</section><!--/video-->
+			<section class="events">
+				<div class="container container_small">
+					<div class="events__inner">
+						<div class="events__info">
+							<h2 class="title title_left">
+								<span>СОБЫТИЯ</span>
+								<span>Проведение мероприятий</span>
+							</h2>
+							<ul class="list-block">
+								<li>Детские спортивные сборы</li>
+								<li>Корпоративные мероприятия: конференции, семинары, тренинги</li>
+								<li>Групповые заезды</li>
+							</ul>
+							<a href="#" class="btn">Подробнее о мероприятиях</a>
+						</div>
+						<div class="events__photo">
+							<img src="assets/images/events-photo.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section><!--/events-->
+			<section class="contact">
+				<div class="container container_small">
+					<h2 class="title">
+						<span>Контакты</span>
+						<span>Ждем вас!</span>
+					</h2>
+				</div>
+				<div class="container container_full">
+					<div class="contact__map">
+						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acf0e16090a44c3427a0638f2da30bc33a9729b8cac7375505e55c334943404b0&amp;width=100%25&amp;height=650&amp;lang=ru_RU&amp;scroll=false"></script>
+					</div>
+				</div>
+				<div class="container container_min">
+					<div class="contact__inner">
+						<div class="contact__info">
+							<div class="contact-item">
+								<div class="contact-item__icon">
+									<img src="assets/images/pin-icon_2.svg" alt="">
+								</div>
+								<div class="contact-item__info">
+									<div class="contact-item__title">Адрес</div>
+									<a href="https://yandex.ru/maps/213/moscow/?from=tabbar&ll=37.463491%2C55.899261&mode=routes&rtext=55.755763%2C37.614680~56.038578%2C37.365278&rtt=auto&ruri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTIwNjMzMDI2EjvQoNC%2B0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0JzQsNC90LXQttC90LDRjyDQv9C70L7RidCw0LTRjCIKDXB1FkIV5gVfQg%3D%3D~ymapsbm1%3A%2F%2Forg%3Foid%3D145728326668&source=serp_navig&z=11.2" class="contact-item__link">141580, Московская область, городской округ Солнечногорск,<br> д. Мышецкое (Ленинградское или Дмитровское шоссе)</a>
+									<br>
+									<a href="https://yandex.ru/maps/213/moscow/?from=tabbar&ll=37.463491%2C55.899261&mode=routes&rtext=55.755763%2C37.614680~56.038578%2C37.365278&rtt=auto&ruri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTIwNjMzMDI2EjvQoNC%2B0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0JzQsNC90LXQttC90LDRjyDQv9C70L7RidCw0LTRjCIKDXB1FkIV5gVfQg%3D%3D~ymapsbm1%3A%2F%2Forg%3Foid%3D145728326668&source=serp_navig&z=11.2" class="contact-item__sublink">Посмотреть маршрут</a>
+								</div>
+							</div><!--/contact-item-->
+							<div class="contact-item">
+								<div class="contact-item__icon">
+									<img src="assets/images/phone-icon.svg" alt="">
+								</div>
+								<div class="contact-item__info">
+									<div class="contact-item__title">Центральный ресепшн</div>
+									<a href="tel:+74956175969" class="contact-item__link">+7 (495) 617 59 69</a>
+								</div>
+							</div><!--/contact-item-->
+							<div class="contact-item">
+								<div class="contact-item__icon">
+									<img src="assets/images/phone-icon.svg" alt="">
+								</div>
+								<div class="contact-item__info">
+									<div class="contact-item__title">Спортивно-оздоровительный комплекс</div>
+									<a href="tel:+74956175961" class="contact-item__link">+7 (495) 617 59 61</a>
+								</div>
+							</div><!--/contact-item-->
+							<div class="contact-item">
+								<div class="contact-item__icon">
+									<img src="assets/images/phone-icon.svg" alt="">
+								</div>
+								<div class="contact-item__info">
+									<div class="contact-item__title">Медицинский центр</div>
+									<a href="tel:+74956175962" class="contact-item__link">+7 (495) 617 59 62</a>
+								</div>
+							</div><!--/contact-item-->
+							<div class="contact-item">
+								<div class="contact-item__icon">
+									<img src="assets/images/mail-icon.svg" alt="">
+								</div>
+								<div class="contact-item__info">
+									<div class="contact-item__title">Email</div>
+									<a href="mailto:info@ozerokrugloe.com" class="contact-item__link">info@ozerokrugloe.com</a>
+								</div>
+							</div><!--/contact-item-->
+						</div>
+						<div class="contact__form">
+							<form action="#" class="form">
+								<div class="form__item">
+									<div class="form__error">Заполните форму</div>
+									<input type="text" placeholder="Имя">
+								</div><!--/form__item-->
+								<div class="form__item">
+									<div class="form__error">Заполните форму</div>
+									<input type="text" placeholder="Телефон">
+								</div><!--/form__item-->
+								<div class="form__item">
+									<textarea placeholder="Сообщение"></textarea>
+								</div><!--/form__item-->
+								<button type="submit" class="btn">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+								<div class="form-success">
+									<div class="form-success__title">Ваше сообщение отправлено.</div>
+									<div class="form-success__description">
+										<p>Мы скоро свяжемся с вами.</p>
+										<p>Посмотрите <a href="#">фотографии отеля.</a></p>
+									</div>
+								</div>
+							</form><!--/form-->
+						</div>
+					</div>
+				</div>
+			</section><!--/contact-->
 		</main>
 	</div>
+
+	<div class="popup popup-form">
+		<div class="closex"></div>
+		<div class="popup__inner">
+			<span class="popup__close">
+				<svg>
+					<use xlink:href="#close-icon"></use>
+				</svg>
+			</span>
+			<div class="popup__box">
+				<div class="popup__content">
+					<form action="#" class="form">
+						<div class="form__item">
+							<div class="form__error">Заполните форму</div>
+							<input type="text" placeholder="Имя">
+						</div><!--/form__item-->
+						<div class="form__item">
+							<div class="form__error">Заполните форму</div>
+							<input type="text" placeholder="Телефон">
+						</div><!--/form__item-->
+						<div class="form__item">
+							<textarea placeholder="Сообщение"></textarea>
+						</div><!--/form__item-->
+						<button type="submit" class="btn">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+						<div class="form-success">
+							<div class="form-success__title">Ваше сообщение отправлено.</div>
+							<div class="form-success__description">
+								<p>Мы скоро свяжемся с вами.</p>
+								<p>Посмотрите <a href="#">фотографии отеля.</a></p>
+							</div>
+						</div>
+					</form><!--/form-->
+				</div>
+    	    </div>
+		</div>
+	</div><!--/popup-form-->
 
 	<script src="assets/js/jquery-3.6.0.min.js"></script>
 	<script src="assets/js/slick.min.js"></script>

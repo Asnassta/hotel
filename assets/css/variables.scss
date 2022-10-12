@@ -3,12 +3,15 @@ $ffg: 'EB Garamond', serif;
 $lh: 1.2;
 $wh: #ffffff;
 $bl: #212121;
+$l-bl: #636363;
 $orange: #FC7324;
 $l-orange: #FFEADF;
+$l-orange2: #FFF8F4;
 $lgray: #EEEEEE;
 $gray: #F6F6F6;
 $d-gray: #CDCDCD;
 $green: #1F8A70;
+$red: #E4010A;
 
 $maxWidth: 1920;
 @mixin adaptive-font($pcSize, $mobSize) {
