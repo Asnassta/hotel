@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<title>Озеро Круглое</title>
+</head>
+<body>
+	<!--Sprite-->
+	<svg style="display: none;">
+		<symbol id="close-icon" viewBox="0 0 28 28">
+			<g>
+				<path d="M28 2.82L25.18 0L14 11.18L2.82 0L0 2.82L11.18 14L0 25.18L2.82 28L14 16.82L25.18 28L28 25.18L16.82 14L28 2.82Z"/>
+			</g>
+		</symbol>
+		<symbol id="pin-icon" viewBox="0 0 24 24">
+			<g>
+				<path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM7 9C7 6.24 9.24 4 12 4C14.76 4 17 6.24 17 9C17 11.88 14.12 16.19 12 18.88C9.92 16.21 7 11.85 7 9Z" fill="#FC7324"/>
+				<path d="M12 11.5C13.3807 11.5 14.5 10.3807 14.5 9C14.5 7.61929 13.3807 6.5 12 6.5C10.6193 6.5 9.5 7.61929 9.5 9C9.5 10.3807 10.6193 11.5 12 11.5Z" fill="#FC7324"/>
+			</g>
+		</symbol>
+		<symbol id="map-icon" viewBox="0 0 24 24">
+			<g>
+				<path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM19 18H5C4.45 18 4 17.55 4 17V8L10.94 12.34C11.59 12.75 12.41 12.75 13.06 12.34L20 8V17C20 17.55 19.55 18 19 18ZM12 11L4 6H20L12 11Z" fill="#FC7324"/>
+			</g>
+		</symbol>
+		<symbol id="mail-icon" viewBox="0 0 24 24">
+			<g>
+				<path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM19 18H5C4.45 18 4 17.55 4 17V8L10.94 12.34C11.59 12.75 12.41 12.75 13.06 12.34L20 8V17C20 17.55 19.55 18 19 18ZM12 11L4 6H20L12 11Z" fill="#FC7324"/>
+			</g>
+		</symbol>
+		<symbol id="phone-icon" viewBox="0 0 24 24">
+			<g>
+				<path d="M6.54 5C6.6 5.89 6.75 6.76 6.99 7.59L5.79 8.79C5.38 7.59 5.12 6.32 5.03 5H6.54ZM16.4 17.02C17.25 17.26 18.12 17.41 19 17.47V18.96C17.68 18.87 16.41 18.61 15.2 18.21L16.4 17.02ZM7.5 3H4C3.45 3 3 3.45 3 4C3 13.39 10.61 21 20 21C20.55 21 21 20.55 21 20V16.51C21 15.96 20.55 15.51 20 15.51C18.76 15.51 17.55 15.31 16.43 14.94C16.33 14.9 16.22 14.89 16.12 14.89C15.86 14.89 15.61 14.99 15.41 15.18L13.21 17.38C10.38 15.93 8.06 13.62 6.62 10.79L8.82 8.59C9.1 8.31 9.18 7.92 9.07 7.57C8.7 6.45 8.5 5.25 8.5 4C8.5 3.45 8.05 3 7.5 3Z"/>
+			</g>
+		</symbol>
+	</svg>
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-links">
+				<div class="container">
+					<div class="header-links__inner">
+						<a href="tel:+74956175969" class="header__link">
+							<svg>
+								<use xlink:href="#phone-icon"></use>
+							</svg>
+							<span>+7 (495) 617 59 69</span>
+						</a>
+						<a href="mailto:info@ozerokrugloe.com" class="header__link">
+							<svg>
+								<use xlink:href="#mail-icon"></use>
+							</svg>
+							<span>info@ozerokrugloe.com</span>
+						</a>
+						<a href="https://disk.yandex.ru/i/o0LU59ichElrWw" class="header__link">
+							<svg>
+								<use xlink:href="#map-icon"></use>
+							</svg>
+							<span>схема отеля</span>
+						</a>
+						<a href="https://yandex.ru/maps/213/moscow/?from=tabbar&ll=37.463491%2C55.899261&mode=routes&rtext=55.755763%2C37.614680~56.038578%2C37.365278&rtt=auto&ruri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTIwNjMzMDI2EjvQoNC%2B0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0JzQsNC90LXQttC90LDRjyDQv9C70L7RidCw0LTRjCIKDXB1FkIV5gVfQg%3D%3D~ymapsbm1%3A%2F%2Forg%3Foid%3D145728326668&source=serp_navig&z=11.2" class="header__link">
+							<svg>
+								<use xlink:href="#pin-icon"></use>
+							</svg>
+							<span>Московская область, г. о. Солнечногорск, д. Мышецкое</span>
+						</a>
+					</div>
+				</div>
+			</div><!--/header-links-->
+			<div class="header-menu">
+				<div class="container">
+					<div class="header-menu__inner">
+						<a href="/" class="header__logo">
+							<img src="assets/images/logo.svg" alt="">
+						</a>
+						<nav class="header-nav">
+							<a href="#" class="header-nav__item">Об отеле</a>
+							<a href="#" class="header-nav__item">Номера</a>
+							<a href="#" class="header-nav__item">Услуги</a>
+							<a href="#" class="header-nav__item">Фотографии</a>
+							<a href="#" class="header-nav__item">Контакты</a>
+							<a href="#" class="btn">Забронировать</a>
+						</nav>
+						<a href="tel:+74956175969" class="header__link">
+							<svg>
+								<use xlink:href="#phone-icon"></use>
+							</svg>
+							<span>+7 (495) 617 59 69</span>
+						</a>
+						<div class="burger">
+							<div class="burger__item"></div>
+						</div>
+					</div>
+				</div>
+			</div><!--/header-menu-->
+			<div class="mobile-menu">
+				<div class="mobile-menu__bg"></div>
+				<div class="mobile-menu__inner">
+					<div class="mobile-menu__buttons">
+						<a href="#" class="btn">Забронировать</a>
+						<a href="#" class="mobile-menu__close">
+							<svg>
+								<use xlink:href="#close-icon"></use>
+							</svg>
+						</a>
+					</div>
+					<nav class="header-nav">
+						<a href="#" class="header-nav__item">Об отеле</a>
+						<a href="#" class="header-nav__item">Номера</a>
+						<a href="#" class="header-nav__item">Услуги</a>
+						<a href="#" class="header-nav__item">Фотографии</a>
+						<a href="#" class="header-nav__item">Контакты</a>
+					</nav>
+					<div class="header-links">
+						<div class="header-links__inner">
+							<a href="https://yandex.ru/maps/213/moscow/?from=tabbar&ll=37.463491%2C55.899261&mode=routes&rtext=55.755763%2C37.614680~56.038578%2C37.365278&rtt=auto&ruri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTIwNjMzMDI2EjvQoNC%2B0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0JzQsNC90LXQttC90LDRjyDQv9C70L7RidCw0LTRjCIKDXB1FkIV5gVfQg%3D%3D~ymapsbm1%3A%2F%2Forg%3Foid%3D145728326668&source=serp_navig&z=11.2" class="header__link">
+								<svg>
+									<use xlink:href="#pin-icon"></use>
+								</svg>
+								<span>Московская область, г. о. Солнечногорск, д. Мышецкое</span>
+							</a>
+							<a href="tel:+74956175969" class="header__link">
+								<svg>
+									<use xlink:href="#phone-icon"></use>
+								</svg>
+								<span>+7 (495) 617 59 69</span>
+							</a>
+							<a href="mailto:info@ozerokrugloe.com" class="header__link">
+								<svg>
+									<use xlink:href="#mail-icon"></use>
+								</svg>
+								<span>info@ozerokrugloe.com</span>
+							</a>
+							<a href="https://disk.yandex.ru/i/o0LU59ichElrWw" class="header__link">
+								<svg>
+									<use xlink:href="#map-icon"></use>
+								</svg>
+								<span>схема отеля</span>
+							</a>
+						</div>
+					</div><!--/header-links-->
+				</div>
+			</div><!--/mobile-menu-->
+		</header><!--/header-->
+
+		<main class="main">
+			<section class="intro">
+				<div class="container container_full">
+					<div class="intro__slider">
+						<div class="intro__slide">
+							<div class="intro__item intro__item_center">
+								<div class="intro__photo">
+									<img src="assets/images/hotel.jpg" alt="">
+								</div>
+								<div class="intro__info intro__info_center">
+									<div class="intro__logo animated_slideInDown">
+										<img src="assets/images/logo-white.svg" alt="">
+									</div>
+									<h1 class="intro__title animated_slideInDown">Парк-отель</h1>
+									<div class="intro__description animated_zoomOut">В окружении лесов, рядом с озером «Круглое»</div>
+									<a href="#" class="btn animated_slideInUp">Забронировать</a>
+								</div>
+							</div>
+						</div><!--/intro__slide-->
+						<div class="intro__slide">
+							<div class="intro__item intro__item_right">
+								<div class="intro__photo">
+									<img src="assets/images/forest.jpg" alt="">
+								</div>
+								<div class="intro__info">
+									<h1 class="intro__title animated_slideInDown">26 гектаров</h1>
+									<div class="intro__description animated_zoomOut">Размер территории парка-отеля</div>
+									<a href="#" class="btn animated_slideInUp">Забронировать</a>
+								</div>
+							</div>
+						</div><!--/intro__slide-->
+						<div class="intro__slide">
+							<div class="intro__item intro__item_left">
+								<div class="intro__photo">
+									<img src="assets/images/forest.jpg" alt="">
+								</div>
+								<div class="intro__info">
+									<h1 class="intro__title animated_flipInX">12 корпусов<br> и 517 номеров</h1>
+									<div class="intro__description animated_slideInLeft">Два отеля на одной территории:<br> «Озеро круглое» и «Озеро лесное»</div>
+									<a href="#" class="btn animated_slideInUp">Забронировать</a>
+								</div>
+							</div>
+						</div><!--/intro__slide-->
+					</div>
+					<div class="slider-arrows">
+						<div class="slider-arrow slider-arrow_prev">
+							<img src="assets/images/arrow.svg" alt="">
+						</div>
+						<div class="slider-arrow slider-arrow_next">
+							<img src="assets/images/arrow.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</section><!--/intro-->
+			<div class="links-block">
+				<div class="container">
+					<div class="links-block__inner">
+						<a href="https://yandex.ru/maps/213/moscow/?from=tabbar&ll=37.463491%2C55.899261&mode=routes&rtext=55.755763%2C37.614680~56.038578%2C37.365278&rtt=auto&ruri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTIwNjMzMDI2EjvQoNC%2B0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0JzQsNC90LXQttC90LDRjyDQv9C70L7RidCw0LTRjCIKDXB1FkIV5gVfQg%3D%3D~ymapsbm1%3A%2F%2Forg%3Foid%3D145728326668&source=serp_navig&z=11.2" class="links-block__item">
+							<svg>
+								<use xlink:href="#pin-icon"></use>
+							</svg>
+							<span>Московская область,<br> г. о. Солнечногорск, д. Мышецкое</span>
+						</a>
+						<a href="mailto:info@ozerokrugloe.com" class="links-block__item">
+							<svg>
+								<use xlink:href="#mail-icon"></use>
+							</svg>
+							<span>info@ozerokrugloe.com</span>
+						</a>
+						<a href="https://disk.yandex.ru/i/o0LU59ichElrWw" class="links-block__item">
+							<svg>
+								<use xlink:href="#map-icon"></use>
+							</svg>
+							<span>схема отеля</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<section class="notify">
+				<div class="container">
+					<div class="notify-box">
+						<h3 class="notify-box__title">Приостановление работы спорткомплекса</h3>
+						<div class="notify-box__data">Новость 07.09.2022</div>
+						<div class="notify-box__text">Уважаемые гости парк-отеля «Озеро Круглое»!<br>В целях предотвращения распространения новой коронавирусной инфекции (COVID-2019) на территории Московской области и реализации постановления губернатора Московской области от 13 июня 2021 года №178-ПГ с 21 июня 2021 года спортивно-оздоровительный комплекс базы отдыха «Озеро Круглое» приостанавливает свою работу до улучшения эпидемиологической обстановки.</div>
+					</div>
+				</div>
+			</section><!--/notify-->
+			<section class="location">
+				<div class="container">
+					<h2 class="title">
+						<span>Расположение</span>
+						<span>Два отеля на одной территории</span>
+					</h2>
+					<div class="description">Всего 40 минут от Москвы по Ленинградскому или Дмитровскому шоссе</div>
+					<div class="location__inner">
+						<a href="#" class="location__item">
+							<div class="location__photo">
+								<img src="assets/images/hotel_2.jpg" alt="">
+							</div>
+							<div class="location__logo">
+								<img src="assets/images/logo-white.svg" alt="">
+							</div>
+						</a>
+						<a href="#" class="location__item">
+							<div class="location__photo">
+								<img src="assets/images/hotel_3.jpg" alt="">
+							</div>
+							<div class="location__logo">
+								<img src="assets/images/logo-forest.svg" alt="">
+							</div>
+						</a>
+					</div>
+				</div>
+			</section><!--/location-->
+			<section class="rooms">
+				<div class="container">
+					<h2 class="title">
+						<span>Номера</span>
+						<span>12 корпусов и 517 номеров</span>
+					</h2>
+					<div class="tabs-nav">
+						<a href="#" onclick="javascript:tabs(1);return false;" class="t1 active">ВСЕ НОМЕРА</a>
+						<a href="#" onclick="javascript:tabs(2);return false;"  class="t2">ОЗЕРО КРУГЛОЕ</a>
+						<a href="#" onclick="javascript:tabs(3);return false;"  class="t3">ОЗЕРО ЛЕСНОЕ</a>
+					</div>
+					<div class="tabs-block tab_1">
+						<div class="rooms__inner">
+							<a href="#" class="rooms__item">
+								<div class="rooms__photo">
+									<img src="assets/images/room-photo_1.jpg" alt="">
+								</div>
+								<div class="rooms__data">
+									<div class="rooms__price">от 2950 руб/сутки</div>
+									<div class="rooms__location">Озеро Круглое</div>
+								</div>
+								<div class="rooms__info">
+									<h4 class="rooms__title">Standard</h4>
+									<div class="rooms__description">
+										<p>Площадь номера 19 м2. </p>
+										<p>Двухспальная кровать или две односпальные.</p>
+									</div>
+								</div>
+							</a><!--/rooms__item-->
+							<a href="#" class="rooms__item">
+								<div class="rooms__photo">
+									<img src="assets/images/room-photo_2.jpg" alt="">
+								</div>
+								<div class="rooms__data">
+									<div class="rooms__price">от 3700 руб/сутки</div>
+									<div class="rooms__location">Озеро Круглое</div>
+								</div>
+								<div class="rooms__info">
+									<h4 class="rooms__title">Superior</h4>
+									<div class="rooms__description">
+										<p>Площадь номера 25 м2.  </p>
+										<p>Двухспальная кровать или две односпальные. Диван/кресло, дополнительная кровать.</p>
+									</div>
+								</div>
+							</a><!--/rooms__item-->
+							<a href="#" class="rooms__item">
+								<div class="rooms__photo">
+									<img src="assets/images/room-photo_3.jpg" alt="">
+								</div>
+								<div class="rooms__data">
+									<div class="rooms__price">от 5650 руб/сутки</div>
+									<div class="rooms__location">Озеро Круглое</div>
+								</div>
+								<div class="rooms__info">
+									<h4 class="rooms__title">Suite</h4>
+									<div class="rooms__description">
+										<p>Площадь номера 30 м2.  </p>
+										<p>Две комнаты. Двухспальная кровать или две односпальные. Диван/кресло, дополнительная кровать.</p>
+									</div>
+								</div>
+							</a><!--/rooms__item-->
+							<a href="#" class="rooms__item">
+								<div class="rooms__photo">
+									<img src="assets/images/room-photo_4.jpg" alt="">
+								</div>
+								<div class="rooms__data">
+									<div class="rooms__price">от 7000 руб/сутки</div>
+									<div class="rooms__location">Озеро Круглое</div>
+								</div>
+								<div class="rooms__info">
+									<h4 class="rooms__title">Deluxe</h4>
+									<div class="rooms__description">
+										<p>Площадь номера 57 м2.  </p>
+										<p>Две комнаты. Двухспальная кровать или две односпальные. Диван/кресло, дополнительная кровать. Джакузи.</p>
+									</div>
+								</div>
+							</a><!--/rooms__item-->
+							<a href="#" class="rooms__item">
+								<div class="rooms__photo">
+									<img src="assets/images/room-photo_5.jpg" alt="">
+								</div>
+								<div class="rooms__data">
+									<div class="rooms__price">от 2950 руб/сутки</div>
+									<div class="rooms__location">Озеро ЛЕСНОЕ</div>
+								</div>
+								<div class="rooms__info">
+									<h4 class="rooms__title">Standard</h4>
+									<div class="rooms__description">
+										<p>Площадь номера 19 м2.  </p>
+										<p>Двухспальная кровать или две односпальные. </p>
+									</div>
+								</div>
+							</a><!--/rooms__item-->
+							<a href="#" class="rooms__item">
+								<div class="rooms__photo">
+									<img src="assets/images/room-photo_6.jpg" alt="">
+								</div>
+								<div class="rooms__data">
+									<div class="rooms__price">от 3560 руб/сутки</div>
+									<div class="rooms__location">Озеро ЛЕСНОЕ</div>
+								</div>
+								<div class="rooms__info">
+									<h4 class="rooms__title">Апартаменты</h4>
+									<div class="rooms__description">
+										<p>Площадь апартаментов от 30 м2. </p>
+										<p>1-, 2-, 3-комнатные. Кухня, плита, стиральная машина, душевая кабина. </p>
+									</div>
+								</div>
+							</a><!--/rooms__item-->
+						</div>
+					</div><!--/tabs-block-->
+					<div class="tabs-block tab_2">
+						<div class="rooms__inner">
+							<a href="#" class="rooms__item">
+								<div class="rooms__photo">
+									<img src="assets/images/room-photo_1.jpg" alt="">
+								</div>
+								<div class="rooms__data">
+									<div class="rooms__price">от 2950 руб/сутки</div>
+									<div class="rooms__location">Озеро Круглое</div>
+								</div>
+								<div class="rooms__info">
+									<h4 class="rooms__title">Standard</h4>
+									<div class="rooms__description">
+										<p>Площадь номера 19 м2. </p>
+										<p>Двухспальная кровать или две односпальные.</p>
+									</div>
+								</div>
+							</a><!--/rooms__item-->
+							<a href="#" class="rooms__item">
+								<div class="rooms__photo">
+									<img src="assets/images/room-photo_2.jpg" alt="">
+								</div>
+								<div class="rooms__data">
+									<div class="rooms__price">от 3700 руб/сутки</div>
+									<div class="rooms__location">Озеро Круглое</div>
+								</div>
+								<div class="rooms__info">
+									<h4 class="rooms__title">Superior</h4>
+									<div class="rooms__description">
+										<p>Площадь номера 25 м2.  </p>
+										<p>Двухспальная кровать или две односпальные. Диван/кресло, дополнительная кровать.</p>
+									</div>
+								</div>
+							</a><!--/rooms__item-->
+							<a href="#" class="rooms__item">
+								<div class="rooms__photo">
+									<img src="assets/images/room-photo_3.jpg" alt="">
+								</div>
+								<div class="rooms__data">
+									<div class="rooms__price">от 5650 руб/сутки</div>
+									<div class="rooms__location">Озеро Круглое</div>
+								</div>
+								<div class="rooms__info">
+									<h4 class="rooms__title">Suite</h4>
+									<div class="rooms__description">
+										<p>Площадь номера 30 м2.  </p>
+										<p>Две комнаты. Двухспальная кровать или две односпальные. Диван/кресло, дополнительная кровать.</p>
+									</div>
+								</div>
+							</a><!--/rooms__item-->
+							<a href="#" class="rooms__item">
+								<div class="rooms__photo">
+									<img src="assets/images/room-photo_4.jpg" alt="">
+								</div>
+								<div class="rooms__data">
+									<div class="rooms__price">от 7000 руб/сутки</div>
+									<div class="rooms__location">Озеро Круглое</div>
+								</div>
+								<div class="rooms__info">
+									<h4 class="rooms__title">Deluxe</h4>
+									<div class="rooms__description">
+										<p>Площадь номера 57 м2.  </p>
+										<p>Две комнаты. Двухспальная кровать или две односпальные. Диван/кресло, дополнительная кровать. Джакузи.</p>
+									</div>
+								</div>
+							</a><!--/rooms__item-->
+						</div>
+					</div><!--/tabs-block-->
+					<div class="tabs-block tab_3">
+						<div class="rooms__inner">
+							<a href="#" class="rooms__item">
+								<div class="rooms__photo">
+									<img src="assets/images/room-photo_5.jpg" alt="">
+								</div>
+								<div class="rooms__data">
+									<div class="rooms__price">от 2950 руб/сутки</div>
+									<div class="rooms__location">Озеро ЛЕСНОЕ</div>
+								</div>
+								<div class="rooms__info">
+									<h4 class="rooms__title">Standard</h4>
+									<div class="rooms__description">
+										<p>Площадь номера 19 м2.  </p>
+										<p>Двухспальная кровать или две односпальные. </p>
+									</div>
+								</div>
+							</a><!--/rooms__item-->
+							<a href="#" class="rooms__item">
+								<div class="rooms__photo">
+									<img src="assets/images/room-photo_6.jpg" alt="">
+								</div>
+								<div class="rooms__data">
+									<div class="rooms__price">от 3560 руб/сутки</div>
+									<div class="rooms__location">Озеро ЛЕСНОЕ</div>
+								</div>
+								<div class="rooms__info">
+									<h4 class="rooms__title">Апартаменты</h4>
+									<div class="rooms__description">
+										<p>Площадь апартаментов от 30 м2. </p>
+										<p>1-, 2-, 3-комнатные. Кухня, плита, стиральная машина, душевая кабина. </p>
+									</div>
+								</div>
+							</a><!--/rooms__item-->
+						</div>
+					</div><!--/tabs-block-->
+				</div>
+			</section><!--/rooms-->
+		</main>
+	</div>
+
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
