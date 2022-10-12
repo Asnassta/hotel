@@ -24,10 +24,8 @@ $(document).ready(function() {
       $('body').removeClass('hidden');   
   });
   /*========/mobile-menu=========*/
-});
 
-$(window).on('load', function(){
-	/*=================Sliders===================*/
+  /*=================Sliders===================*/
   		/*========intro-slider========*/
   		$('.intro__slider').slick({
   			fade: true,
@@ -40,5 +38,6 @@ $(window).on('load', function(){
   /*=======/intro-slider========*/
 /*=================/sliders===================*/
 });
+
 
 
