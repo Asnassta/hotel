@@ -26,8 +26,7 @@ $(document).ready(function() {
   /*========/mobile-menu=========*/
 });
 
-
-$(window).load(function() {
+$(window).on('load', function(){
 	/*=================Sliders===================*/
   		/*========intro-slider========*/
   		$('.intro__slider').slick({
@@ -41,4 +40,5 @@ $(window).load(function() {
   /*=======/intro-slider========*/
 /*=================/sliders===================*/
 });
+
 
