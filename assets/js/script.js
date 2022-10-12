@@ -26,15 +26,19 @@ $(document).ready(function() {
   /*========/mobile-menu=========*/
 });
 
-/*=================Sliders===================*/
-  /*========intro-slider========*/
-  $('.intro__slider').slick({
-  	fade: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    prevArrow: $('.intro .slider-arrow_prev'),
-    nextArrow: $('.intro .slider-arrow_next'),
-    dots: true,
-  });
+
+$(window).load(function() {
+	/*=================Sliders===================*/
+  		/*========intro-slider========*/
+  		$('.intro__slider').slick({
+  			fade: true,
+  		  slidesToShow: 1,
+  		  slidesToScroll: 1,
+  		  prevArrow: $('.intro .slider-arrow_prev'),
+  		  nextArrow: $('.intro .slider-arrow_next'),
+  		  dots: true,
+  		});
   /*=======/intro-slider========*/
 /*=================/sliders===================*/
+});
+
