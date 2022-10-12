@@ -24,6 +24,7 @@ $(document).ready(function() {
       $('body').removeClass('hidden');   
   });
   /*========/mobile-menu=========*/
+});
 
 /*=================Sliders===================*/
   /*========intro-slider========*/
@@ -37,7 +38,3 @@ $(document).ready(function() {
   });
   /*=======/intro-slider========*/
 /*=================/sliders===================*/
-
-});
-
-
