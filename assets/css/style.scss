@@ -923,6 +923,14 @@ body.hidden {
 			min-height: 172px;
 		}
 	}
+
+	.service {
+		.title {
+			br {
+				display: none;
+			}
+		}
+	}
 }
 
 @media(max-width: 414px) {

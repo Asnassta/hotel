@@ -1321,7 +1321,9 @@ body.hidden {
   .intro__description {
     margin-bottom: 24px; }
   .location__item {
-    min-height: 172px; } }
+    min-height: 172px; }
+  .service .title br {
+    display: none; } }
 
 @media (max-width: 414px) {
   .notify-box {
