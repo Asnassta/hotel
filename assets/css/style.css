@@ -799,7 +799,8 @@ body.hidden {
     visibility: visible; }
   .intro .btn {
     font-size: 16px;
-    padding: 16px 26px; }
+    padding: 16px 26px;
+    visibility: visible; }
   .intro .slick-active .animated_slideInDown {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
