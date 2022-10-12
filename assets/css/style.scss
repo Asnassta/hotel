@@ -1512,5 +1512,25 @@ body.hidden {
 			width: 150px;
 		}
 	}
+
+	.photo {
+		.title {
+			br {
+				display: none;
+			}
+		}
+	}
+}
+
+@media(max-width: 376px) {
+	.photo {
+		.title {
+			span {
+				&:nth-child(2) {
+					font-size: 40px;
+				}
+			}
+		}
+	}
 }
 /*============/adaptive==========*/
