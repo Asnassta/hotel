@@ -88,6 +88,7 @@ $(document).ready(function() {
 new Swiper('.photo-slider', {
 	slidesPerView: 4,
 	spaceBetween: 30,
+  loop: true,
 	resizeReInit: true,
 	navigation: {
     	nextEl: '.arrow-circle_next',

@@ -1199,10 +1199,7 @@ body.hidden {
       width: 100%;
       height: 100%;
       -o-object-fit: cover;
-      object-fit: cover;
-      -webkit-transition: all .2s linear;
-      -o-transition: all .2s linear;
-      transition: all .2s linear; }
+      object-fit: cover; }
     .location__photo:after {
       content: "";
       width: 100%;
@@ -1303,10 +1300,7 @@ body.hidden {
       width: 100%;
       height: 100%;
       -o-object-fit: cover;
-      object-fit: cover;
-      -webkit-transition: all .2s linear;
-      -o-transition: all .2s linear;
-      transition: all .2s linear; }
+      object-fit: cover; }
     .rooms__photo:after {
       content: "";
       width: 100%;
