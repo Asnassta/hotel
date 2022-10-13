@@ -2017,7 +2017,7 @@ body.hidden {
   .photo .title span:nth-child(2) {
     font-size: 40px; } }
 
-@media (max-height: 550px) {
+@media (max-height: 560px) {
   .intro__item {
     min-height: 505px; } }
 
