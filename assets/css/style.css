@@ -157,9 +157,9 @@
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  -webkit-transition: all .4s linear;
-  -o-transition: all .4s linear;
-  transition: all .4s linear; }
+  -webkit-transition: all .25s linear;
+  -o-transition: all .25s linear;
+  transition: all .25s linear; }
   .mobile-menu.show {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -1328,7 +1328,7 @@ body.hidden {
 .service {
   margin-bottom: 130px; }
   .service__inner {
-    margin-top: 25px;
+    margin-top: 35px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1347,9 +1347,9 @@ body.hidden {
     box-shadow: 0px 10px 50px 20px rgba(0, 0, 0, 0.07);
     border-bottom: 5px solid #FC7324;
     padding: 24px 16px;
-    -webkit-transition: all .2s linear;
-    -o-transition: all .2s linear;
-    transition: all .2s linear; }
+    -webkit-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    transition: all .1s linear; }
     .service__item:hover {
       background-color: #FC7324; }
       .service__item:hover .service__icon {
@@ -1372,9 +1372,9 @@ body.hidden {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-transition: all .2s linear;
-    -o-transition: all .2s linear;
-    transition: all .2s linear;
+    -webkit-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    transition: all .1s linear;
     margin-bottom: 40px; }
   .service__title {
     font-family: "EB Garamond", serif;
@@ -1383,18 +1383,18 @@ body.hidden {
     color: #212121;
     line-height: 1.2;
     margin-bottom: 5px;
-    -webkit-transition: all .2s linear;
-    -o-transition: all .2s linear;
-    transition: all .2s linear; }
+    -webkit-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    transition: all .1s linear; }
   .service__description {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: #636363;
     line-height: 1.25;
-    -webkit-transition: all .2s linear;
-    -o-transition: all .2s linear;
-    transition: all .2s linear; }
+    -webkit-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    transition: all .1s linear; }
 
 /*========/service==========*/
 /*======Photo========*/
@@ -1543,6 +1543,8 @@ body.hidden {
         text-decoration: underline; }
       .contact-item__link:last-child {
         margin-bottom: 0; }
+    .contact-item span.contact-item__link:hover {
+      text-decoration: none; }
     .contact-item__sublink {
       font-family: "Montserrat", sans-serif;
       font-size: 16px;
