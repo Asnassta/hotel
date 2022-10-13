@@ -1540,4 +1540,12 @@ body.hidden {
 		}
 	}
 }
+
+@media(max-height: 550px) {
+	.intro {
+		&__item {
+			min-height: 505px;
+		}
+	}
+}
 /*============/adaptive==========*/
