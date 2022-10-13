@@ -8,7 +8,7 @@ function tabs(n)
 
 $(document).ready(function() {
 
-	/*========mobile-menu=========*/
+/*========mobile-menu=========*/
   $(".burger").on("click", function(event) {
     event.preventDefault();
       $(".mobile-menu").toggleClass('show'); 

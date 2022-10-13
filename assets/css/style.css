@@ -287,6 +287,10 @@
     .footer__col:last-child {
       min-width: 26%;
       margin-right: 0; }
+      .footer__col:last-child .footer__list li {
+        margin-bottom: 20px; }
+        .footer__col:last-child .footer__list li:last-child {
+          margin-bottom: 0; }
   .footer__logo {
     display: block;
     margin-bottom: 36px; }
@@ -339,7 +343,7 @@
     font-weight: 400;
     color: #ffffff;
     line-height: 1.2;
-    margin-bottom: 10px; }
+    margin-bottom: 15px; }
 
 /*=========/footer===========*/
 /*============Adaptive==========*/
@@ -1175,9 +1179,9 @@ body.hidden {
     position: relative;
     z-index: 1;
     overflow: hidden; }
-    .location__item:hover .location__photo img {
-      width: 110%;
-      height: 110%; }
+    .location__item:hover .location__photo {
+      width: 106%;
+      height: 106%; }
   .location__photo {
     width: 100%;
     height: 100%;
@@ -1188,17 +1192,17 @@ body.hidden {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: -1;
-    -webkit-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear; }
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear; }
     .location__photo img {
       width: 100%;
       height: 100%;
       -o-object-fit: cover;
       object-fit: cover;
-      -webkit-transition: all .3s linear;
-      -o-transition: all .3s linear;
-      transition: all .3s linear; }
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
     .location__photo:after {
       content: "";
       width: 100%;
@@ -1243,8 +1247,8 @@ body.hidden {
     overflow: hidden;
     z-index: 1; }
     .rooms__item:hover .rooms__photo {
-      width: 110%;
-      height: 110%; }
+      width: 106%;
+      height: 106%; }
   .rooms__info {
     margin-top: 100%; }
   .rooms__title {
@@ -1292,17 +1296,17 @@ body.hidden {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: -1;
-    -webkit-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear; }
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear; }
     .rooms__photo img {
       width: 100%;
       height: 100%;
       -o-object-fit: cover;
       object-fit: cover;
-      -webkit-transition: all .3s linear;
-      -o-transition: all .3s linear;
-      transition: all .3s linear; }
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
     .rooms__photo:after {
       content: "";
       width: 100%;
@@ -1438,6 +1442,8 @@ body.hidden {
   padding: 75px 20px;
   margin-bottom: 50px;
   background: #FFF8F5; }
+  .photo .title span:first-child {
+    color: #F6EFEC; }
   .photo-slider {
     margin-top: 65px;
     display: -webkit-box;
@@ -1478,7 +1484,8 @@ body.hidden {
 .events {
   margin-bottom: 95px; }
   .events .title {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    padding-top: 13%; }
   .events__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1828,6 +1835,8 @@ body.hidden {
       margin-left: 20px; }
     .photo .arrow-circle-box {
       margin-top: 36px; }
+  .video iframe {
+    height: 40vh; }
   .contact {
     margin-bottom: 60px; } }
 
@@ -1942,8 +1951,6 @@ body.hidden {
       margin-top: 0; }
     .rooms .tabs-nav {
       margin-top: 20px; }
-  .service .container {
-    padding: 0; }
   .service__inner {
     margin-left: 0;
     margin-bottom: -25px; }
@@ -1955,6 +1962,8 @@ body.hidden {
     margin-bottom: 30px; }
   .events {
     margin-bottom: 65px; }
+    .events .title {
+      padding-top: 6%; }
     .events__inner {
       display: block; }
       .events__inner:after {
@@ -2001,7 +2010,9 @@ body.hidden {
     margin: 0 -20px;
     border-radius: 0; }
   .events .btn {
-    width: 100%; } }
+    width: 100%; }
+  .video iframe {
+    height: 200px; } }
 
 @media (max-width: 360px) {
   .intro__title {

@@ -153,6 +153,7 @@ body.hidden {
 	}
 }
 
+
 /*========Slider-arrows=======*/
 .slider-arrow {
 	cursor: pointer;
@@ -505,10 +506,8 @@ body.hidden {
 		overflow: hidden;
 		&:hover {
 			.location__photo {
-				img {
-					width: 110%;
-					height: 110%;
-				}
+				width: 106%;
+				height: 106%;
 			}
 		}
 	}
@@ -520,12 +519,12 @@ body.hidden {
 		left: 50%;
 		transform: translate(-50%, -50%);
 		z-index: -1;
-		transition: all .3s linear;
+		transition: all .2s linear;
 		img {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
-			transition: all .3s linear;
+			transition: all .2s linear;
 		}
 		&:after {
 			content: "";
@@ -574,8 +573,8 @@ body.hidden {
 		z-index: 1;
 		&:hover {
 			.rooms__photo {
-				width: 110%;
-				height: 110%;
+				width: 106%;
+				height: 106%;
 			}
 		}
 	}
@@ -630,12 +629,12 @@ body.hidden {
 		left: 50%;
 		transform: translate(-50%, -50%);
 		z-index: -1;
-		transition: all .3s linear;
+		transition: all .2s linear;
 		img {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
-			transition: all .3s linear;
+			transition: all .2s linear;
 		}
 		&:after {
 			content: "";
@@ -761,6 +760,13 @@ body.hidden {
 	padding: 75px 20px;
 	margin-bottom: 50px;
 	background: #FFF8F5;
+	.title {
+		span {
+			&:first-child {
+				color: #F6EFEC;
+			}
+		}
+	}
 	&-slider {
 		margin-top: 65px;
 		display: flex;
@@ -810,6 +816,7 @@ body.hidden {
 	margin-bottom: 95px;
 	.title {
 		margin-bottom: 20px;
+		padding-top: 13%;
 	}
 	&__inner {
 		display: flex;
@@ -1215,6 +1222,12 @@ body.hidden {
 		}
 	}
 
+	.video {
+		iframe {
+			height: 40vh;
+		}
+	}
+
 	.contact {
 		margin-bottom: 60px;
 	}
@@ -1392,9 +1405,6 @@ body.hidden {
 	}
 
 	.service {
-		.container {
-			padding: 0;
-		}
 		&__inner {
 			margin-left: 0;
 			margin-bottom: -25px;
@@ -1412,6 +1422,9 @@ body.hidden {
 
 	.events {
 		margin-bottom: 65px;
+		.title {
+			padding-top: 6%;
+		}
 		&__inner {
 			display: block;
 			&:after {
@@ -1503,6 +1516,12 @@ body.hidden {
 	.events {
 		.btn {
 			width: 100%;
+		}
+	}
+
+	.video {
+		iframe {
+			height: 200px;
 		}
 	}
 }
