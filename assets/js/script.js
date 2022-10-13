@@ -127,14 +127,19 @@ $("form").submit(function(e) {
 	
 	$('.form__item').removeClass('error');
 	if(name_input.val().length == 0)
-	{	
+  {  
  
-		return name_input.parent().addClass('error');
-	}
-	else if(phone_input.val().length == 0)
-	{
-		return phone_input.parent().addClass('error');
-	}
+    name_input.parent().addClass('error');
+  }
+  if(phone_input.val().length == 0)
+  {
+    phone_input.parent().addClass('error');
+  }
+
+  if(name_input.val().length == 0 || phone_input.val().length == 0)
+  {
+    return false;
+  }
 
 	
     form.find('.form-success').addClass('show');
