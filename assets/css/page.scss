@@ -226,6 +226,90 @@
 }
 /*=======/mobile-menu======*/
 
+/*=========Footer===========*/
+.footer {
+	background-color: #191919;
+	padding: 100px 0 70px;
+	&__menu {
+		display: flex;
+	}
+	&__col {
+		flex: 1 1 auto;
+		margin-right: 55px;
+		&:first-child {
+			min-width: 27%;
+		}
+		&:nth-child(2) {
+			min-width: 14%;
+		}
+		&:nth-child(3) {
+			min-width: 21%;
+		}
+		&:last-child {
+			min-width: 26%;
+			margin-right: 0;
+		}
+	}
+	&__logo {
+		display: block;
+		margin-bottom: 36px;
+		img {
+			width: 150px;
+		}
+	}
+	&__title {
+		font-family: $ffg;
+		font-size: 26px;
+		font-weight: 600;
+		color: $wh;
+		line-height: $lh;
+		margin-bottom: 18px;
+	}
+	&__list {
+		li {
+			margin-bottom: 14px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__link {
+		display: inline-flex;
+		align-items: flex-start;
+		font-family: $ff;
+		font-size: 16px;
+		font-weight: 400;
+		color: $wh;
+		line-height: $lh;
+		transition: all .2s linear;
+		&:hover {
+			text-decoration: underline;
+		}
+		&-icon {
+			display: inline-block;
+			flex: 0 0 20px;
+			margin-top: -3px;
+			margin-right: 10px;
+		}
+	}
+	&__dev {
+		font-family: $ff;
+		font-size: 16px;
+		font-weight: 400;
+		color: #808080;
+		line-height: $lh;
+	}
+	.copyright {
+		font-family: $ff;
+		font-size: 16px;
+		font-weight: 400;
+		color: $wh;
+		line-height: $lh;
+		margin-bottom: 10px;
+	}
+}
+/*=========/footer===========*/
+
 /*============Adaptive==========*/
 @media(max-width: 1200px) {
 	.header {
@@ -244,6 +328,15 @@
 		&-nav {
 			&__item {
 				margin-right: 40px;
+			}
+		}
+	}
+
+	.footer {
+		padding: 50px 0 55px;
+		&__col {
+			&:nth-child(2) {
+				min-width: auto;
 			}
 		}
 	}
@@ -267,6 +360,33 @@
 			img {
 				width: 74px;
 			}
+		}
+	}
+
+	.footer {
+		&__menu {
+			display: block;
+			position: relative;
+			padding-bottom: 85px;
+		}
+		&__logo {
+			margin-bottom: 40px;
+			img {
+				widows: 182px;
+			}
+		}
+		&__col {
+			margin-right: 0;
+			margin-bottom: 42px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		&__foot {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
 		}
 	}
 }

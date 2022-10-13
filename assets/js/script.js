@@ -29,14 +29,14 @@ $(document).ready(function() {
     $(".open-popup").on("click", function (event) {
         name_pop = $(this).attr('data-popup');
         event.preventDefault();
-        $(".popup."+name_pop).fadeIn(333);
-        $(".popup."+name_pop+" .popup__inner").fadeIn(333);
+        $(".popup."+name_pop).fadeIn(111);
+        $(".popup."+name_pop+" .popup__inner").fadeIn(111);
         $('body').addClass("hidden");
     });
     $(".popup__close,  .closex").on("click", function (event) {
         event.preventDefault();
-        $(".popup").fadeOut('333');
-        $(".popup__inner").fadeOut(333);
+        $(".popup").fadeOut('111');
+        $(".popup__inner").fadeOut(111);
         $('body').removeClass("hidden");
     });
   /*==============/popup=================*/
@@ -85,7 +85,48 @@ $(document).ready(function() {
   	});
 	/*=======/photo-slider========*/
 /*=================/sliders===================*/
-});
 
+$('.copyright__year').html((new Date()).getFullYear());
+
+/*==========Form============*/
+$("form").submit(function(e) {
+
+	console.log($('form').attr('id'));
+
+    e.preventDefault(); // avoid to execute the actual submit of the form.
+
+    var form = $(this);
+    var actionUrl = form.attr('action');
+	name_input = form.find('input[name="name"]')
+	phone_input = form.find('input[name="phone"]')
+	
+	$('.form__item').removeClass('error');
+	if(name_input.val().length == 0)
+	{	
+ 
+		return name_input.parent().addClass('error');
+	}
+	else if(phone_input.val().length == 0)
+	{
+		return phone_input.parent().addClass('error');
+	}
+
+	
+    form.find('.form-success').addClass('show');
+ 
+    $.ajax({
+        type: "POST",
+        url: 'http://127.0.0.1/',
+        data: form.serialize(), // serializes the form's elements.
+        success: function(data)
+        {
+          alert(data); // show response from the php script.
+        }
+    });
+    
+});
+/*==========/form============*/
+
+});
 
 

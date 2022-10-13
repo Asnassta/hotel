@@ -1414,6 +1414,9 @@ body.hidden {
 		margin-bottom: 65px;
 		&__inner {
 			display: block;
+			&:after {
+				display: none;
+			}
 		}
 		&__info {
 			width: 100%;
