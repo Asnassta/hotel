@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+	<link rel="icon" href="favicon.svg" type=" image/svg+xml">
+	<title>Озеро Лесное</title>
+</head>
+<body>
+	<!--Sprite-->
+	<svg style="display: none;">
+		<symbol id="pdf-icon" viewBox="0 0 24 24">
+			<g>
+				<path d="M20 2H8C6.9 2 6 2.9 6 4V16C6 17.1 6.9 18 8 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H8V4H20V16ZM4 6H2V20C2 21.1 2.9 22 4 22H18V20H4V6ZM16 12V9C16 8.45 15.55 8 15 8H13V13H15C15.55 13 16 12.55 16 12ZM14 9H15V12H14V9ZM18 11H19V10H18V9H19V8H17V13H18V11ZM10 11H11C11.55 11 12 10.55 12 10V9C12 8.45 11.55 8 11 8H9V13H10V11ZM10 9H11V10H10V9Z"/>
+			</g>
+		</symbol>
+		<symbol id="doc-icon" viewBox="0 0 24 24">
+			<g>
+				<path d="M14 2H6C4.9 2 4.01 2.9 4.01 4L4 20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2ZM16 18H8V16H16V18ZM16 14H8V12H16V14ZM13 9V3.5L18.5 9H13Z"/>
+			</g>
+		</symbol>
+		<symbol id="arrow-icon" viewBox="0 0 24 24">
+			<g>
+				<path d="M17.77 3.77L16 2L6.00002 12L16 22L17.77 20.23L9.54002 12L17.77 3.77Z"/>
+			</g>
+		</symbol>
+		<symbol id="close-icon" viewBox="0 0 28 28">
+			<g>
+				<path d="M28 2.82L25.18 0L14 11.18L2.82 0L0 2.82L11.18 14L0 25.18L2.82 28L14 16.82L25.18 28L28 25.18L16.82 14L28 2.82Z"/>
+			</g>
+		</symbol>
+		<symbol id="pin-icon" viewBox="0 0 24 24">
+			<g>
+				<path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM7 9C7 6.24 9.24 4 12 4C14.76 4 17 6.24 17 9C17 11.88 14.12 16.19 12 18.88C9.92 16.21 7 11.85 7 9Z" fill="#FC7324"/>
+				<path d="M12 11.5C13.3807 11.5 14.5 10.3807 14.5 9C14.5 7.61929 13.3807 6.5 12 6.5C10.6193 6.5 9.5 7.61929 9.5 9C9.5 10.3807 10.6193 11.5 12 11.5Z" fill="#FC7324"/>
+			</g>
+		</symbol>
+		<symbol id="map-icon" viewBox="0 0 24 24">
+			<g>
+				<path d="M20.5 3L20.34 3.03L15 5.1L9 3L3.36 4.9C3.15 4.97 3 5.15 3 5.38V20.5C3 20.78 3.22 21 3.5 21L3.66 20.97L9 18.9L15 21L20.64 19.1C20.85 19.03 21 18.85 21 18.62V3.5C21 3.22 20.78 3 20.5 3ZM10 5.47L14 6.87V18.53L10 17.13V5.47ZM5 6.46L8 5.45V17.15L5 18.31V6.46ZM19 17.54L16 18.55V6.86L19 5.7V17.54Z"/>
+			</g>
+		</symbol>
+		<symbol id="mail-icon" viewBox="0 0 24 24">
+			<g>
+				<path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM19 18H5C4.45 18 4 17.55 4 17V8L10.94 12.34C11.59 12.75 12.41 12.75 13.06 12.34L20 8V17C20 17.55 19.55 18 19 18ZM12 11L4 6H20L12 11Z" fill="#FC7324"/>
+			</g>
+		</symbol>
+		<symbol id="phone-icon" viewBox="0 0 24 24">
+			<g>
+				<path d="M6.54 5C6.6 5.89 6.75 6.76 6.99 7.59L5.79 8.79C5.38 7.59 5.12 6.32 5.03 5H6.54ZM16.4 17.02C17.25 17.26 18.12 17.41 19 17.47V18.96C17.68 18.87 16.41 18.61 15.2 18.21L16.4 17.02ZM7.5 3H4C3.45 3 3 3.45 3 4C3 13.39 10.61 21 20 21C20.55 21 21 20.55 21 20V16.51C21 15.96 20.55 15.51 20 15.51C18.76 15.51 17.55 15.31 16.43 14.94C16.33 14.9 16.22 14.89 16.12 14.89C15.86 14.89 15.61 14.99 15.41 15.18L13.21 17.38C10.38 15.93 8.06 13.62 6.62 10.79L8.82 8.59C9.1 8.31 9.18 7.92 9.07 7.57C8.7 6.45 8.5 5.25 8.5 4C8.5 3.45 8.05 3 7.5 3Z"/>
+			</g>
+		</symbol>
+	</svg>
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-links">
+				<div class="container">
+					<div class="header-links__inner">
+						<a href="tel:+74956175969" class="header__link">
+							<svg>
+								<use xlink:href="#phone-icon"></use>
+							</svg>
+							<span>+7 (495) 617 59 69</span>
+						</a>
+						<a href="mailto:info@ozerokrugloe.com" class="header__link">
+							<svg>
+								<use xlink:href="#mail-icon"></use>
+							</svg>
+							<span>info@ozerokrugloe.com</span>
+						</a>
+						<a href="https://docs.yandex.ru/docs/view?url=ya-disk-public%3A%2F%2FarRcLgQ2TYUMuGI7MtSgWUKfTs79BBO5RWucR%2FKpBRH5i5EHolN6LOg3MBiofWf5G7pWpVQYsubyrcajHimPFw%3D%3D&name=Skhema_Ozero.pdf&nosw=1" class="header__link" target="blank">
+							<svg>
+								<use xlink:href="#map-icon"></use>
+							</svg>
+							<span>схема отеля</span>
+						</a>
+						<a href="https://yandex.ru/maps/213/moscow/?from=tabbar&ll=37.463491%2C55.899261&mode=routes&rtext=55.755763%2C37.614680~56.038578%2C37.365278&rtt=auto&ruri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTIwNjMzMDI2EjvQoNC%2B0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0JzQsNC90LXQttC90LDRjyDQv9C70L7RidCw0LTRjCIKDXB1FkIV5gVfQg%3D%3D~ymapsbm1%3A%2F%2Forg%3Foid%3D145728326668&source=serp_navig&z=11.2" class="header__link" target="blank">
+							<svg>
+								<use xlink:href="#pin-icon"></use>
+							</svg>
+							<span>Московская область, г. о. Солнечногорск, д. Мышецкое</span>
+						</a>
+					</div>
+				</div>
+			</div><!--/header-links-->
+			<div class="header-menu">
+				<div class="container">
+					<div class="header-menu__inner">
+						<a href="index.html" class="header__logo">
+							<img src="assets/images/logo.svg" alt="">
+						</a>
+						<nav class="header-nav">
+							<a href="#" class="header-nav__item">Об отеле</a>
+							<a href="#" class="header-nav__item">Номера</a>
+							<a href="#" class="header-nav__item">Услуги</a>
+							<a href="#" class="header-nav__item">Фотографии</a>
+							<a href="#" class="header-nav__item">Контакты</a>
+							<a href="#" class="btn open-popup" data-popup="popup-form">Забронировать</a>
+						</nav>
+						<a href="tel:+74956175969" class="header__link">
+							<svg>
+								<use xlink:href="#phone-icon"></use>
+							</svg>
+							<span>+7 (495) 617 59 69</span>
+						</a>
+						<div class="burger">
+							<div class="burger__item"></div>
+						</div>
+					</div>
+				</div>
+			</div><!--/header-menu-->
+			<div class="mobile-menu">
+				<div class="mobile-menu__bg"></div>
+				<div class="mobile-menu__inner">
+					<div class="mobile-menu__buttons">
+						<a href="#" class="btn open-popup" data-popup="popup-form">Забронировать</a>
+						<a href="#" class="mobile-menu__close">
+							<svg>
+								<use xlink:href="#close-icon"></use>
+							</svg>
+						</a>
+					</div>
+					<nav class="header-nav">
+						<a href="#" class="header-nav__item">Об отеле</a>
+						<a href="#" class="header-nav__item">Номера</a>
+						<a href="#" class="header-nav__item">Услуги</a>
+						<a href="#" class="header-nav__item">Фотографии</a>
+						<a href="#" class="header-nav__item">Контакты</a>
+					</nav>
+					<div class="header-links">
+						<div class="header-links__inner">
+							<a href="https://yandex.ru/maps/213/moscow/?from=tabbar&ll=37.463491%2C55.899261&mode=routes&rtext=55.755763%2C37.614680~56.038578%2C37.365278&rtt=auto&ruri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTIwNjMzMDI2EjvQoNC%2B0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0JzQsNC90LXQttC90LDRjyDQv9C70L7RidCw0LTRjCIKDXB1FkIV5gVfQg%3D%3D~ymapsbm1%3A%2F%2Forg%3Foid%3D145728326668&source=serp_navig&z=11.2" class="header__link" target="blank">
+								<svg>
+									<use xlink:href="#pin-icon"></use>
+								</svg>
+								<span>Московская область, г. о. Солнечногорск, д. Мышецкое</span>
+							</a>
+							<a href="tel:+74956175969" class="header__link">
+								<svg>
+									<use xlink:href="#phone-icon"></use>
+								</svg>
+								<span>+7 (495) 617 59 69</span>
+							</a>
+							<a href="mailto:info@ozerokrugloe.com" class="header__link">
+								<svg>
+									<use xlink:href="#mail-icon"></use>
+								</svg>
+								<span>info@ozerokrugloe.com</span>
+							</a>
+							<a href="https://docs.yandex.ru/docs/view?url=ya-disk-public%3A%2F%2FarRcLgQ2TYUMuGI7MtSgWUKfTs79BBO5RWucR%2FKpBRH5i5EHolN6LOg3MBiofWf5G7pWpVQYsubyrcajHimPFw%3D%3D&name=Skhema_Ozero.pdf&nosw=1" class="header__link" target="blank">
+								<svg>
+									<use xlink:href="#map-icon"></use>
+								</svg>
+								<span>схема отеля</span>
+							</a>
+						</div>
+					</div><!--/header-links-->
+				</div>
+			</div><!--/mobile-menu-->
+		</header><!--/header-->
+
+		<main class="main">
+			<section class="page">
+				<div class="page-intro">
+					<div class="container">
+						<h1 class="title-main">Озеро Лесное</h1>
+						<div class="subtitle">Парк-отель</div>
+						<div class="page-intro__photo">
+							<img src="assets/images/hotel-forest.jpg" alt="">
+						</div>
+					</div>
+				</div><!--/page-intro-->
+				<div class="container">
+					<div class="page__inner">
+						<div class="page__content">
+							<h2 class="page-title">8 корпусов,<br> 320 номеров</h2>
+							<div class="page-text">
+								<p>Парк-Отель «‎Озеро лесное»‎ включает в себя 8 корпусов от 3 до 4 этажей. Размер номерного фонда — 427 номеров 2 классов: Стандарт и Аппартаменты.</p>
+							</div>
+							<div class="page-block">
+								<h2 class="page-subtitle">Номер Standard</h2>
+								<div class="page-text">
+									<p>200 однокомнатных и двухкомнатных номеров типа Стандарт площадью 19-22 м2, расчитанные на 1-3-х человек и включающие одну двухспальную кровать или две односпальные. Возможна установка дополнительной кровати: детской или взрослой. </p>
+									<p>В каждом номере: wi-fi, минибар, телевизор, мебель, душевая кабина, набор косметики, полотенца, балкон. Уборка номера каждые 3 дня со сменой полотенец, смена постельного белья 1 раз 5 дней.</p>
+								</div>
+								<a href="#" class="link">Узнать подробнее о номере Standard</a>
+								<div class="page-photo">
+									<img src="assets/images/room-photo_5.jpg" alt="">
+									<img src="assets/images/room-photo_8.jpg" alt="">
+								</div>
+							</div><!--/page-block-->
+							<div class="page-block">
+								<h2 class="page-subtitle">Апартаменты</h2>
+								<div class="page-text">
+									<p>1, 2 и 3-х комнатные апартаменты площадью 25-50 м2, расчитанные на 2-6-х человек и включающие односпальные кровати.</p>
+									<p>В каждом номере: кухня, плита, стиральная машина, wi-fi, минибар, телевизор, мебель, душевая кабина, набор косметики, полотенца, балкон. Уборка номера каждые 3 дня со сменой полотенец, смена постельного белья 1 раз 5 дней.</p>
+								</div>
+								<a href="#" class="link">Узнать подробнее об Аппартаментах</a>
+								<div class="page-photo">
+									<img src="assets/images/room-photo_9.jpg" alt="">
+									<img src="assets/images/room-photo_10.jpg" alt="">
+									<img src="assets/images/room-photo_11.jpg" alt="">
+								</div>
+							</div><!--/page-block-->
+						</div><!--/page__content-->
+						<div class="page__sidebar">
+							<div class="reserve-box">
+								<a href="#" class="btn open-popup" data-popup="popup-form">Забронировать</a>
+								<div class="reserve-box__description">Забронировать по телефону</div>
+								<a href="tel:+74956175969" class="reserve-box__link">
+									<svg>
+										<use xlink:href="#phone-icon"></use>
+									</svg>
+									<span>+7 (495) 617 59 69</span>
+								</a>
+							</div><!--/reserve-box-->
+							<div class="page__links">
+								<a href="#" class="link-icon">
+									<svg>
+										<use xlink:href="#doc-icon"></use>
+									</svg>
+									<span>Цены на номера</span>
+								</a>
+								<a href="#" class="link-icon">
+									<svg>
+										<use xlink:href="#doc-icon"></use>
+									</svg>
+									<span>Цены на дополнительные услуги</span>
+								</a>
+							</div>
+							<a href="#" class="card-location">
+								<div class="card-location__photo">
+									<img src="assets/images/hotel_2.jpg" alt="">
+								</div>
+								<div class="card-location__logo">
+									<img src="assets/images/logo-white.svg" alt="">
+								</div>
+							</a><!--/card-location-->
+							<div class="preview-rooms">
+								<div class="preview-rooms__title">Номера</div>
+								<a href="#" class="preview-rooms__item">
+									<div class="preview-rooms__photo">
+										<img src="assets/images/room-photo_1.jpg" alt="">
+									</div>
+									<div class="preview-rooms__info">
+										<div class="preview-rooms__header">
+											<div class="preview-rooms__name">Standard</div>
+											<div class="preview-rooms__price">от 2950 ₽</div>
+										</div>
+										<div class="preview-rooms__location">Озеро круглое</div>
+										<span class="preview-rooms__link">Посмотреть</span>
+									</div>
+								</a><!--/preview-rooms__item-->
+								<a href="#" class="preview-rooms__item">
+									<div class="preview-rooms__photo">
+										<img src="assets/images/room-photo_2.jpg" alt="">
+									</div>
+									<div class="preview-rooms__info">
+										<div class="preview-rooms__header">
+											<div class="preview-rooms__name">Superior</div>
+											<div class="preview-rooms__price">от 3700 ₽</div>
+										</div>
+										<div class="preview-rooms__location">Озеро круглое</div>
+										<span class="preview-rooms__link">Посмотреть</span>
+									</div>
+								</a><!--/preview-rooms__item-->
+								<a href="#" class="preview-rooms__item">
+									<div class="preview-rooms__photo">
+										<img src="assets/images/room-photo_3.jpg" alt="">
+									</div>
+									<div class="preview-rooms__info">
+										<div class="preview-rooms__header">
+											<div class="preview-rooms__name">Suite</div>
+											<div class="preview-rooms__price">от 5650 ₽</div>
+										</div>
+										<div class="preview-rooms__location">Озеро круглое</div>
+										<span class="preview-rooms__link">Посмотреть</span>
+									</div>
+								</a><!--/preview-rooms__item-->
+								<a href="#" class="preview-rooms__item">
+									<div class="preview-rooms__photo">
+										<img src="assets/images/room-photo_4.jpg" alt="">
+									</div>
+									<div class="preview-rooms__info">
+										<div class="preview-rooms__header">
+											<div class="preview-rooms__name">Deluxe</div>
+											<div class="preview-rooms__price">от 7000 ₽</div>
+										</div>
+										<div class="preview-rooms__location">Озеро круглое</div>
+										<span class="preview-rooms__link">Посмотреть</span>
+									</div>
+								</a><!--/preview-rooms__item-->
+								<a href="#" class="preview-rooms__item">
+									<div class="preview-rooms__photo">
+										<img src="assets/images/room-photo_5.jpg" alt="">
+									</div>
+									<div class="preview-rooms__info">
+										<div class="preview-rooms__header">
+											<div class="preview-rooms__name">Standard</div>
+											<div class="preview-rooms__price">от 2950 ₽</div>
+										</div>
+										<div class="preview-rooms__location">Озеро лесное</div>
+										<span class="preview-rooms__link">Посмотреть</span>
+									</div>
+								</a><!--/preview-rooms__item-->
+								<a href="#" class="preview-rooms__item">
+									<div class="preview-rooms__photo">
+										<img src="assets/images/room-photo_6.jpg" alt="">
+									</div>
+									<div class="preview-rooms__info">
+										<div class="preview-rooms__header">
+											<div class="preview-rooms__name">Аппартаменты</div>
+											<div class="preview-rooms__price">от 5000 ₽</div>
+										</div>
+										<div class="preview-rooms__location">Озеро лесное</div>
+										<span class="preview-rooms__link">Посмотреть</span>
+									</div>
+								</a><!--/preview-rooms__item-->
+							</div><!--/preview-rooms-->
+							<div class="scheme">
+								<div class="scheme__title">Схема отеля</div>
+								<div class="scheme__photo">
+									<img src="assets/images/scheme.png" alt="">
+								</div>
+								<a href="https://docs.yandex.ru/docs/view?url=ya-disk-public%3A%2F%2FarRcLgQ2TYUMuGI7MtSgWUKfTs79BBO5RWucR%2FKpBRH5i5EHolN6LOg3MBiofWf5G7pWpVQYsubyrcajHimPFw%3D%3D&name=Skhema_Ozero.pdf&nosw=1" class="link-icon" target="blank">
+									<svg>
+										<use xlink:href="#doc-icon"></use>
+									</svg>
+									<span>Посмотреть увеличенную схему</span>
+								</a>
+							</div><!--/scheme-->
+						</div><!--/page__sidebar-->
+					</div>
+				</div>
+			</section><!--/page-->
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__menu">
+					<div class="footer__col">
+						<a href="index.html" class="footer__logo">
+							<img src="assets/images/logo-white.svg" alt="">
+						</a>
+						<div class="footer__foot">
+							<div class="copyright">© Copyrights <span class="copyright__year">2022</span>. All rights reserved.</div>
+							<a href="https://arrivomedia.ru/" class="footer__dev" target="blank">Разработка АМ</a>
+						</div>
+					</div><!--/footer__col-->
+					<div class="footer__col">
+						<div class="footer__title">Об отеле</div>
+						<ul class="footer__list">
+							<li>
+								<a href="#" class="footer__link">Главная</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Номера</a>
+
+							</li>
+							<li>
+								<a href="#" class="footer__link">Услуги</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Фотографии</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Блог</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Контакты</a>
+							</li>
+						</ul>
+					</div><!--/footer__col-->
+					<div class="footer__col">
+						<div class="footer__title">Документы</div>
+						<ul class="footer__list">
+							<li>
+								<a href="#" class="footer__link">Правила проживания</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Пребывание на территории</a>
+
+							</li>
+							<li>
+								<a href="#" class="footer__link">Политика конфиденциальности</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Для турфирм</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Вакансии</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Все документы</a>
+							</li>
+						</ul>
+					</div><!--/footer__col-->
+					<div class="footer__col">
+						<div class="footer__title">Контакты</div>
+						<ul class="footer__list">
+							<li>
+								<a href="https://yandex.ru/maps/213/moscow/?from=tabbar&ll=37.463491%2C55.899261&mode=routes&rtext=55.755763%2C37.614680~56.038578%2C37.365278&rtt=auto&ruri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTIwNjMzMDI2EjvQoNC%2B0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0JzQsNC90LXQttC90LDRjyDQv9C70L7RidCw0LTRjCIKDXB1FkIV5gVfQg%3D%3D~ymapsbm1%3A%2F%2Forg%3Foid%3D145728326668&source=serp_navig&z=11.2" class="footer__link" target="blank">
+									<span class="footer__link-icon">
+										<img src="assets/images/pin-icon_2.svg" alt="">
+									</span>
+									<span>Московская область, г.о. Солнечногорск, д. Мышецкое</span>
+								</a>
+							</li>
+							<li>
+								<a href="tel:+74956175969" class="footer__link">
+									<span class="footer__link-icon">
+										<img src="assets/images/phone-icon.svg" alt="">
+									</span>
+									<span>+7 (495) 617 59 69</span>
+								</a>
+							</li>
+							<li>
+								<a href="mailto:info@ozerokrugloe.com" class="footer__link">
+									<span class="footer__link-icon">
+										<img src="assets/images/mail-icon.svg" alt="">
+									</span>
+									<span>info@ozerokrugloe.com</span>
+								</a>
+							</li>
+						</ul>
+					</div><!--/footer__col-->
+				</div>
+			</div>
+		</footer><!--/footer-->
+	</div>
+
+	<div class="popup popup-form">
+		<div class="closex"></div>
+		<div class="popup__inner">
+			<span class="popup__close">
+				<svg>
+					<use xlink:href="#close-icon"></use>
+				</svg>
+			</span>
+			<div class="popup__box">
+				<div class="popup__content">
+					<form action="#" class="form">
+						<div class="form__item">
+							<div class="form__error">Заполните форму</div>
+							<input name="name" type="text" placeholder="Имя">
+						</div><!--/form__item-->
+						<div class="form__item">
+							<div class="form__error">Заполните форму</div>
+							<input name="phone" type="text" placeholder="Телефон">
+						</div><!--/form__item-->
+						<div class="form__item">
+							<textarea placeholder="Сообщение"></textarea>
+						</div><!--/form__item-->
+						<button type="submit" class="btn">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+						<div class="form-success">
+							<div class="form-success__title">Ваше сообщение отправлено.</div>
+							<div class="form-success__description">
+								<p>Мы скоро свяжемся с вами.</p>
+								<p>Посмотрите <a href="#">фотографии отеля.</a></p>
+							</div>
+						</div>
+					</form><!--/form-->
+				</div>
+    	    </div>
+		</div>
+	</div><!--/popup-form-->
+
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/swiper-bundle.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
