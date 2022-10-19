@@ -1284,6 +1284,10 @@
   .preview-rooms__price {
     font-size: 14px; } }
 
+@media (max-width: 860px) {
+  .page-table {
+    padding-right: 40px; } }
+
 @media (max-width: 992px) {
   .page__inner {
     display: block; }
