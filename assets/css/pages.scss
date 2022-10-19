@@ -989,6 +989,9 @@
 					img {
 						height: 80px;
 					}
+					&:after {
+						border: 1px solid $orange;
+					}
 				}
 			}
 			.slider-arrow {

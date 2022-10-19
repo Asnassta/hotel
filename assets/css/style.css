@@ -1479,6 +1479,8 @@
       height: 300px; }
     .page-slider-min__slide img {
       height: 80px; }
+    .page-slider-min__slide:after {
+      border: 1px solid #FC7324; }
     .page-slider .slider-arrow {
       width: 24px;
       height: 24px; }
