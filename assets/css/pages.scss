@@ -1,6 +1,9 @@
 /*=============Page===========*/
 .page {
 	padding-bottom: 120px;
+	.service {
+		margin-bottom: 0;
+	}
 	&-intro {
 		margin-bottom: 55px;
 		position: relative;

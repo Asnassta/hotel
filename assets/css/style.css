@@ -633,6 +633,8 @@
   /*===/page-slider===*/
   /*===/page-table===*/
   /*===/page-convenience===*/ }
+  .page .service {
+    margin-bottom: 0; }
   .page-intro {
     margin-bottom: 55px;
     position: relative;
