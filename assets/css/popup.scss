@@ -70,11 +70,6 @@
 			fill: $wh;
 			transition: all .2s linear;
 		}
-		&:hover {
-			svg {
-				fill: $orange;
-			}
-		}
 	}
 	&__content {
 		padding: 65px 70px;

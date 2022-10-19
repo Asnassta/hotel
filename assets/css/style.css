@@ -586,8 +586,6 @@
       -webkit-transition: all .2s linear;
       -o-transition: all .2s linear;
       transition: all .2s linear; }
-    .popup__close:hover svg {
-      fill: #FC7324; }
   .popup__content {
     padding: 65px 70px; }
   .popup .form-success {
@@ -1214,6 +1212,7 @@
   margin-bottom: 20px; }
 
 .scheme__photo {
+  display: block;
   margin-bottom: 15px; }
   .scheme__photo img {
     width: 100%; }

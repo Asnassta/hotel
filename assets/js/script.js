@@ -83,6 +83,7 @@ $(document).ready(function() {
 /*========page-slider========*/
   new Swiper('.page-slider-main', {
     slidesPerView: 1,
+    loop: true,
     navigation: {
       nextEl: '.slider-arrow_next',
       prevEl: '.slider-arrow_prev',
@@ -91,7 +92,7 @@ $(document).ready(function() {
       autoScrollOffset: 1,
       swiper: {
         el: '.page-slider-min',
-        //loop: true,
+        loop: true,
         slidesPerView: 5,
         spaceBetween: 16,
         breakpoints: {
