@@ -89,10 +89,9 @@ $(document).ready(function() {
       prevEl: '.slider-arrow_prev',
     },
     thumbs: {
-      autoScrollOffset: 1,
       swiper: {
         el: '.page-slider-min',
-        loop: true,
+        //loop: true,
         slidesPerView: 5,
         spaceBetween: 16,
         breakpoints: {
@@ -104,6 +103,7 @@ $(document).ready(function() {
           },
         },
       },
+      autoScrollOffset: 1,
     },
   });
 /*=======/page-slider========*/
