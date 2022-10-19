@@ -54,61 +54,60 @@ $(document).ready(function() {
 	/*=======/intro-slider========*/
 
 	/*========photo-slider========*/
-  	/*$('.photo-slider').slick({
-  		slidesToShow: 4,
-  		slidesToScroll: 1,
-  		prevArrow: $('.photo .arrow-circle_prev'),
-  		nextArrow: $('.photo .arrow-circle_next'),
-  		responsive: [
-    	 {
-    	   breakpoint: 1400,
-    	    settings: {
-    	        slidesToShow: 3,
-    	        slidesToScroll: 1,
-    	    }
-    	  },
-    	  {
-    	   breakpoint: 769,
-    	    settings: {
-    	        slidesToShow: 2,
-    	        slidesToScroll: 1,
-    	    }
-    	  },
-    	  {
-    	   breakpoint: 547,
-    	    settings: {
-    	        slidesToShow: 1,
-    	        slidesToScroll: 1,
-    	    }
-    	  },
-    	]
-  	});*/
-	/*=======/photo-slider========*/
+  	new Swiper('.photo-slider', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+    resizeReInit: true,
+    navigation: {
+        nextEl: '.arrow-circle_next',
+        prevEl: '.arrow-circle_prev',
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        547: {
+          slidesPerView: 2,
+        },
+        769: {
+          slidesPerView: 3,
+        },
+        1400: {
+          slidesPerView: 4,
+        },
+      }
+  });
+/*=======/photo-slider========*/
 
-new Swiper('.photo-slider', {
-	slidesPerView: 4,
-	spaceBetween: 30,
-  loop: true,
-	resizeReInit: true,
-	navigation: {
-    	nextEl: '.arrow-circle_next',
-    	prevEl: '.arrow-circle_prev',
-  	},
-  	breakpoints: {
-  		320: {
-  			slidesPerView: 1,
-  		},
-  		547: {
-  			slidesPerView: 2,
-  		},
-  		769: {
-  			slidesPerView: 3,
-  		},
-  		1400: {
-  			slidesPerView: 4,
-  		},
-  	}
-});
+/*========page-slider========*/
+  new Swiper('.page-slider-main', {
+    slidesPerView: 1,
+    navigation: {
+      nextEl: '.slider-arrow_next',
+      prevEl: '.slider-arrow_prev',
+    },
+    thumbs: {
+      autoScrollOffset: 1,
+      swiper: {
+        el: '.page-slider-min',
+        //loop: true,
+        slidesPerView: 5,
+        spaceBetween: 16,
+        breakpoints: {
+          320: {
+            spaceBetween: 4,
+          },
+          993: {
+            spaceBetween: 16,
+          },
+        },
+      },
+    },
+  });
+/*=======/page-slider========*/
+
+
 /*=================/sliders===================*/
 
 $('.copyright__year').html((new Date()).getFullYear());
