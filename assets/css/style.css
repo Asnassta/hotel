@@ -564,7 +564,7 @@
     z-index: 600; }
   .popup__box {
     background-color: #ffffff;
-    max-height: calc(100vh -100px);
+    max-height: calc(100vh - 100px);
     overflow-x: auto; }
   .popup.show {
     visibility: visible;
@@ -576,7 +576,7 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     cursor: pointer;
     position: absolute;
-    top: -45px;
+    top: -42px;
     right: 12px;
     z-index: 2000; }
     .popup__close svg {
@@ -591,6 +591,15 @@
   .popup .form-success {
     padding: 100px 0;
     border: none; }
+  .popup-photo .popup__inner {
+    max-width: 1440px; }
+  .popup-photo .popup__content {
+    padding: 0; }
+  .popup-photo .popup__box {
+    background-color: transparent;
+    padding: 0;
+    max-height: 100%;
+    overflow: visible; }
 
 /*============/popup==========*/
 /*==========Adaptive===========*/
@@ -618,6 +627,7 @@
   /*===/page-intro===*/
   /*===/page__inner===*/
   /*===/page__content===*/
+  /*===/page-doc===*/
   /*===/page__sidebar===*/
   /*===/page-title===*/
   /*===/page-subtitle===*/
@@ -635,11 +645,17 @@
   /*===/page-list===*/ }
   .page .service {
     margin-bottom: 0; }
+  .page .contact__map {
+    margin-top: 0; }
+  .page-photo .tabs-nav {
+    margin-bottom: 80px; }
   .page-intro {
     margin-bottom: 55px;
     position: relative;
     z-index: 1;
     padding: 150px 0 200px; }
+    .page-intro.mb-0 {
+      margin-bottom: 0; }
     .page-intro__photo {
       position: absolute;
       top: 0;
@@ -686,6 +702,10 @@
       margin-left: -35px; }
       .page__content .room-data > * {
         margin-left: 35px; }
+  .page-doc {
+    padding-right: 70px; }
+    .page-doc .page-title {
+      margin-bottom: 100px; }
   .page__sidebar {
     width: 37%; }
     .page__sidebar .reserve-box {
@@ -1010,6 +1030,31 @@
           text-decoration: underline; }
 
 /*=============/page===========*/
+/*========Breadcrumbs============*/
+.breadcrumbs__item {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #212121;
+  line-height: 1.2;
+  -webkit-transition: all .1s linear;
+  -o-transition: all .1s linear;
+  transition: all .1s linear; }
+  .breadcrumbs__item:hover {
+    color: #FC7324; }
+    .breadcrumbs__item:hover:after {
+      color: #212121; }
+  .breadcrumbs__item:after {
+    content: "/";
+    display: inline-block;
+    margin: 0 1px 0 3px;
+    -webkit-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1); }
+  .breadcrumbs__item:last-child:after {
+    display: none; }
+
+/*========/breadcrumbs============*/
 /*=========Reserve-box=========*/
 .reserve-box {
   background-color: #F7F7F7;
@@ -1344,6 +1389,91 @@
       color: #636363; }
 
 /*=======/room-data========*/
+/*=========Photo-hotel==========*/
+.photo-hotel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-bottom: -20px; }
+  .photo-hotel > * {
+    width: calc(33.33333% - 20px);
+    margin-left: 20px;
+    margin-bottom: 20px; }
+  .photo-hotel__item {
+    position: relative;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+    .photo-hotel__item:hover .photo-hotel__description {
+      opacity: 1; }
+  .photo-hotel__photo {
+    position: relative;
+    padding-top: 100%; }
+    .photo-hotel__photo img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      -o-object-fit: cover;
+      object-fit: cover; }
+  .photo-hotel__description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background: rgba(33, 33, 33, 0.7);
+    padding: 25px 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1.2;
+    opacity: 0;
+    -webkit-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    transition: all .1s linear; }
+  .photo-hotel-popup__photo img {
+    width: 100%;
+    height: 100%;
+    max-height: 70vh;
+    -o-object-fit: cover;
+    object-fit: cover; }
+  .photo-hotel-popup__description {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1.2;
+    padding: 10px 0;
+    text-align: center; }
+
+/*=========/photo-hotel==========*/
+/*=========Plan-block=========*/
+.plan-block {
+  text-align: center; }
+  .plan-block__title {
+    font-family: "EB Garamond", serif;
+    font-size: 80px;
+    font-weight: 600;
+    color: #212121;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    text-align: center; }
+    @media (max-width: 1920px) {
+      .plan-block__title {
+        font-size: calc(40px + 40 * ((100vw - 320px) / 1600)); } }
+  .plan-block__photo {
+    display: block;
+    margin-top: 40px; }
+    .plan-block__photo img {
+      width: 100%; }
+
+/*=========/plan-block=========*/
 /*==========Adaptive==========*/
 @media (max-width: 1300px) {
   .page {
@@ -1367,6 +1497,23 @@
     margin-right: 15px; }
   .preview-rooms__price {
     font-size: 14px; } }
+
+@media (max-width: 1020px) {
+  .page-photo .tabs-nav {
+    margin: 0 -20px 40px;
+    padding: 0 20px 4px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .photo-hotel {
+    margin-bottom: -4px;
+    margin-left: -4px; }
+    .photo-hotel > * {
+      width: calc(33.33333% - 4px);
+      margin-left: 4px;
+      margin-bottom: 4px; }
+    .photo-hotel__item:hover .photo-hotel__description {
+      opacity: 0; } }
 
 @media (max-width: 992px) {
   .page__inner {
@@ -1428,6 +1575,8 @@
       margin: 20px 0; }
     .room-box__price {
       padding-top: 20px; }
+  .page-doc .page-title {
+    margin-bottom: 40px; }
   .page-block__inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1509,7 +1658,9 @@
   .page-slider__slide img {
     height: 180px; }
   .page-slider-min__slide img {
-    height: 45px; } }
+    height: 45px; }
+  .plan-block__photo {
+    margin-top: 30px; } }
 
 @media (max-width: 375px) {
   .preview-rooms__photo {
@@ -2988,5 +3139,9 @@ body.hidden {
 @media (max-height: 560px) {
   .intro__item {
     min-height: 505px; } }
+
+@media (max-width: 360px) {
+  .title-main_long {
+    font-size: 50px; } }
 
 /*============/adaptive==========*/

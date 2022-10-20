@@ -1651,4 +1651,12 @@ body.hidden {
 		}
 	}
 }
+
+@media(max-width: 360px) {
+	.title-main {
+		&_long {
+			font-size: 50px;
+		}
+	}
+}
 /*============/adaptive==========*/
