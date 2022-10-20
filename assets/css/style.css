@@ -616,11 +616,7 @@
   .popup__content {
     padding: 30px 20px; } }
 
-@media (max-height: 600px) {
-  .popup__inner {
-    top: 50px; }
-  .popup__close {
-    top: -35px; }
+@media (max-width: 546px) {
   .popup-photo {
     padding-bottom: 0;
     overflow: hidden; }
@@ -633,6 +629,12 @@
       top: 100%;
       left: 0;
       z-index: 1; } }
+
+@media (max-height: 600px) {
+  .popup__inner {
+    top: 50px; }
+  .popup__close {
+    top: -35px; } }
 
 /*==========/adaptive===========*/
 /*=============Page===========*/

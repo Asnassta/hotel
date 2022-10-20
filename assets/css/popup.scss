@@ -115,16 +115,7 @@
 	}
 }
 
-@media(max-height: 600px) {
-	.popup {
-		&__inner {
-			top: 50px;
-		}
-		&__close {
-			top: -35px;
-		}
-	}
-
+@media(max-width: 546px) {
 	.popup {
 		&-photo {
 			padding-bottom: 0;
@@ -139,6 +130,17 @@
 				left: 0;
 				z-index: 1;
 			}
+		}
+	}
+}
+
+@media(max-height: 600px) {
+	.popup {
+		&__inner {
+			top: 50px;
+		}
+		&__close {
+			top: -35px;
 		}
 	}
 }
