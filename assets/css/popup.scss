@@ -79,6 +79,7 @@
 		border: none;
 	}
 	&-photo {
+		background: rgba(33, 33, 33, 0.9);
 		.popup__inner {
 			max-width: 1440px;
 		}
@@ -121,6 +122,23 @@
 		}
 		&__close {
 			top: -35px;
+		}
+	}
+
+	.popup {
+		&-photo {
+			padding-bottom: 0;
+			overflow: hidden;
+			&:after {
+				content: "";
+				width: 100%;
+				height: 100%;
+				background: rgba(33, 33, 33, 0.9);
+				position: absolute;
+				top: 100%;
+				left: 0;
+				z-index: 1;
+			}
 		}
 	}
 }
