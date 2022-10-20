@@ -618,8 +618,7 @@
 
 @media (max-width: 546px) {
   .popup-photo {
-    padding-bottom: 0;
-    overflow: hidden; }
+    padding-bottom: 0; }
     .popup-photo:after {
       content: "";
       width: 100%;
