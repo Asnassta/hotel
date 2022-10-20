@@ -48,6 +48,7 @@ $(document).ready(function() {
         $(".popup."+name_pop).fadeIn(111);
         $(".popup."+name_pop+" .popup__inner").fadeIn(111);
         $('body').addClass("hidden");
+        $('.wrapper').addClass("bg");
         $('.photo-hotel-popup__photo').html($(this).find('.photo-hotel__photo').html());
         $('.photo-hotel-popup__description').html($(this).find('.photo-hotel__description').html());
     });
@@ -56,6 +57,7 @@ $(document).ready(function() {
         $(".popup").fadeOut('111');
         $(".popup__inner").fadeOut(111);
         $('body').removeClass("hidden");
+        $('.wrapper').removeClass("bg");
     });
   /*==============/popup=================*/
 
