@@ -73,6 +73,7 @@ body.hidden {
 }
 
 .wrapper {
+	padding-top: 156px;
 	overflow: hidden;
 	position: relative;
 	min-height: 100vh;
@@ -1398,6 +1399,9 @@ body.hidden {
 }
 
 @media(max-width: 765px) {
+	.wrapper {
+		padding-top: 65px;
+	}
 	.title {
 		&_left {
 			padding-top: 7%;

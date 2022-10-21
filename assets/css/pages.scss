@@ -9,7 +9,6 @@
 	}
 	&-nav {
 		display: flex;
-		flex-wrap: wrap;
 		&__item {
 			font-family: $ff;
 			font-size: 16px;
@@ -51,7 +50,7 @@
 		margin-bottom: 55px;
 		position: relative;
 		z-index: 1;
-		padding: 130px 0 90px;
+		padding: 100px 0;
 		&.mb-0 {
 			margin-bottom: 0;
 		}
@@ -1013,8 +1012,8 @@
 }
 /*=========/plan-block=========*/
 
-/*=========Error=========*/
-.error {
+/*=========Error-block=========*/
+.error-block{
 	text-align: center;
 	margin: 100px 0;
 	&__title {
@@ -1048,7 +1047,7 @@
 		}
 	}
 }
-/*=========/error=========*/
+/*=========/error-block=========*/
 
 /*==========Adaptive==========*/
 @media(max-width: 1300px) {
@@ -1362,7 +1361,7 @@
 	.page {
 		&-nav {
 			&__item {
-				flex: 0 0 auto;
+				flex: 1 1 auto;
 				&_prev, &_next {
 					//width: 100%;
 					display: none;

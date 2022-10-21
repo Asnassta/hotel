@@ -25,6 +25,28 @@ $(document).ready(function() {
   });
   /*========/mobile-menu=========*/
 
+  /*============FixedHeader========*/
+  let header = $(".header");
+  let headerH = $(".header").innerHeight();
+  let scrollOffset = $(window).scrollTop();
+
+  checkScroll(scrollOffset);
+
+  $(window).on("scroll", function() {
+    scrollOffset = $(this).scrollTop();
+
+    checkScroll(scrollOffset);
+  })
+
+  function checkScroll(scrollOffset) {
+    if( scrollOffset >= headerH ) {
+      header.addClass("fixed");
+    } else {
+      header.removeClass("fixed");
+    }
+  }
+  /*============/fixedHeader========*/
+
   /*===============Popup=================*/
     $(".open-popup").on("click", function (event) {
         name_pop = $(this).attr('data-popup');
