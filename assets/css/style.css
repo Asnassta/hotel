@@ -598,11 +598,11 @@
   .popup__content {
     padding: 65px 70px; }
   .popup .form-success {
-    padding: 100px 0;
+    padding: 35px 0;
     border: none;
     top: -2px;
-    left: -2px;
-    width: calc(100% + 4px);
+    left: -15px;
+    width: calc(100% + 30px);
     height: calc(100% + 4px); }
   .popup-photo {
     background: rgba(33, 33, 33, 0.9); }
@@ -1646,6 +1646,10 @@
     margin-right: 15px; }
   .preview-rooms__price {
     font-size: 14px; } }
+
+@media (max-width: 1200px) {
+  .page-nav__item:nth-child(8), .page-nav__item:nth-child(9), .page-nav__item:nth-child(10), .page-nav__item:nth-child(11), .page-nav__item:nth-child(12), .page-nav__item:nth-child(13) {
+    display: none; } }
 
 @media (max-width: 1020px) {
   .page-photos .tabs-nav {
@@ -2979,18 +2983,20 @@ body.hidden {
     left: 0;
     z-index: 10;
     text-align: center;
-    padding: 100px 20px;
+    padding: 65px 20px;
     border: 2px solid #CDCDCD; }
     .form-success.show {
       opacity: 1;
       pointer-events: auto; }
+    .form-success br {
+      display: none; }
     .form-success__title {
       font-family: "Montserrat", sans-serif;
       font-size: 24px;
       font-weight: 700;
-      color: #212121;
+      color: #636363;
       line-height: 1.5;
-      margin-bottom: 65px; }
+      margin-bottom: 60px; }
     .form-success__description {
       font-family: "Montserrat", sans-serif;
       font-size: 24px;
@@ -3336,6 +3342,10 @@ body.hidden {
 @media (max-height: 560px) {
   .intro__item {
     min-height: 505px; } }
+
+@media (max-width: 414px) {
+  .form-success br {
+    display: block; } }
 
 @media (max-width: 360px) {
   .title-main_long {

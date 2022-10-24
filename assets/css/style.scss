@@ -1121,19 +1121,22 @@ body.hidden {
 		left: 0;
 		z-index: 10;
 		text-align: center;
-		padding: 100px 20px;
+		padding: 65px 20px;
 		border: 2px solid $d-gray;
 		&.show {
 			opacity: 1;
 			pointer-events: auto;
 		}
+		br {
+			display: none;
+		}
 		&__title {
 			font-family: $ff;
 			font-size: 24px;
 			font-weight: 700;
-			color: $bl;
+			color: $l-bl;
 			line-height: 1.5;
-			margin-bottom: 65px;
+			margin-bottom: 60px;
 		}
 		&__description {
 			font-family: $ff;
@@ -1675,6 +1678,14 @@ body.hidden {
 	.intro {
 		&__item {
 			min-height: 505px;
+		}
+	}
+}
+
+@media(max-width: 414px) {
+	.form-success {
+		br {
+			display: block;
 		}
 	}
 }
